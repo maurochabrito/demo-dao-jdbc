@@ -36,7 +36,11 @@ public class Program {
 		uptadeSeller.setName("Marta Wayne");
 		sellerDao.uptade(uptadeSeller);
 		System.out.println("\nUptade completed!");
-
+		
+		System.out.println("\n>>> Test #6: Delete Seller");
+		Integer deleteId = 20;
+		sellerDao.deleteById(deleteId);
+		System.out.println("\nDone! Deleted Seller id = "+deleteId);
 	}
 
 }

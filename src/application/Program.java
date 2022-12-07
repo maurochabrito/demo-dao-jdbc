@@ -16,7 +16,7 @@ public class Program {
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 		System.out.println("\n>>> Test #2: Find by Department");
-		Department department = new Department(1,null);
+		Department department = new Department(4,null);
 		List<Seller> list = sellerDao.findByDepartment(department);
 		for(Seller obj: list) {
 			System.out.println(obj);
